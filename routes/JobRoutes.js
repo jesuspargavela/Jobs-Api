@@ -13,8 +13,8 @@ router.get("/:id", jobsController.getJob);
 //Create a job
 router.post("/", jobsController.createJob);
 
-//Update a portion of a job based on id
-router.patch("/:id", jobsController.updateJob);
+//Update a job based on id
+router.put("/:id", jobsController.updateJob);
 
 //Delete a job based on id
 router.delete("/:id", jobsController.deleteJob);

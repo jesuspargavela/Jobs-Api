@@ -78,7 +78,13 @@ const updateJob = (req, res, next) => {
         return next(error);
     }
 
-    const updatedJob = { ...job, ...req.body };
+    const updatedJob = { id, ...req.body };
+
+    jobs = jobs.map(j => {
+        if (j.id === id) {
+            return updatedJob;
+        }
+    });
 
     res.status(200).json({ job: updatedJob });
 }
