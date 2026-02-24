@@ -1,0 +1,19 @@
+{
+  "name": "jobs-api",
+  "version": "1.0.0",
+  "description": "Jobs Api based on Expressjs",
+  "license": "ISC",
+  "author": "Jesús Vela",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --watch server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "color": "^5.0.3",
+    "colors": "^1.4.0",
+    "express": "^5.2.1",
+    "uuid": "^13.0.0"
+  }
+}
